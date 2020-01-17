@@ -5,22 +5,43 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
-
+    html {
+        font-size: 14px;
+    }
+    .service {
+        &__title {
+            width: 100%;
+            text-align: center;
+        }
+        &__add {
+            text-align: left;
+            clear: both;
+        }
+    }
 }
 
 // ≥768px
 @include media-breakpoint-down(sm) {
-
+    html {
+        font-size: 13px;
+    }
+    .services {
+        &__wrap {
+            max-width: 100%;
+        }
+    }
 }
 
 // ≥576px
 @include media-breakpoint-down(xs) {
-
+    html {
+        font-size: 12px;
+    }
 }
 
 
